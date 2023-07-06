@@ -1,16 +1,3 @@
-.feedback-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* margin-top: 100px;
-    width: 400px;
-    border: 1px solid black;
-    border-radius: 12px; */
-    padding: 40px;
-    /* margin-left: auto;
-    margin-right: auto;
-    background-color: aliceblue;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
-    margin-right: auto;
+.feedbackArea {
+    padding-left: 50px;
 }

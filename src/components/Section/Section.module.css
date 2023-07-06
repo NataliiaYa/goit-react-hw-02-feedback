@@ -1,14 +1,6 @@
-.section {
-    padding: 30px 50px;
-    width: 500px;
-    margin: 0 auto;
-}
-
-.titleSection {
-
-    font-size: 30px;
-    background-color: rgb(232, 223, 223);
-    border-radius: 5px;
-    color: rgb(48, 42, 42);
-    margin-bottom: 60px;
+.title {
+    font-size: 28px;
+    font-style: oblique;
+    margin-bottom: 28px;
+    padding: 20px;
 }
