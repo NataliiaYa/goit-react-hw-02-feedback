@@ -13,11 +13,10 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleVote = evt => {
-    let btnName = evt.target.name;
-    this.setState(prevState => {
-      return { [btnName]: prevState[btnName] + 1 };
-    });
+  handleVote = option => {
+    this.setState(prevState => ({
+      [option]: prevState[option] + 1,
+    }));
   };
 
   countTotalFeedback = () => {
@@ -39,7 +38,9 @@ export class App extends Component {
     return (
       <div className={css.feedbackArea}>
         <Section title="Please leave feedback">
-          <FeedbackOptions onLeaveFeedback={this.handleVote} />
+          <FeedbackOptions
+            options={Object.keys(this.state)}
+            onLeaveFeedback={this.handleVote} />
         </Section>
         <Section title="Statistics">
           {this.countTotalFeedback() === 0 ? (
